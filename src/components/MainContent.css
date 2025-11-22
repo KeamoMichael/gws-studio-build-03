@@ -58,7 +58,8 @@
     font-weight: 600;
     margin-bottom: 16px;
     color: var(--color-text-primary);
-    letter-spacing: -2px;
+    letter-spacing: -4px;
+    /* Tight spacing */
     text-align: center;
     line-height: 1.1;
 }
@@ -124,6 +125,10 @@
     font-weight: 400;
 }
 
+.style-select-container {
+    position: relative;
+}
+
 .style-select-btn {
     background: white;
     border: none;
@@ -138,6 +143,51 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     white-space: nowrap;
     font-weight: 500;
+}
+
+.style-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 8px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+    z-index: 100;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.style-dropdown-item {
+    padding: 10px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-align: left;
+}
+
+.style-dropdown-item:hover {
+    background-color: #f3f4f6;
+}
+
+.style-item-title {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--color-text-primary);
+    display: block;
+    margin-bottom: 2px;
+}
+
+.style-item-desc {
+    font-size: 12px;
+    color: var(--color-text-secondary);
+    display: block;
+    line-height: 1.4;
 }
 
 .prompt-footer {
