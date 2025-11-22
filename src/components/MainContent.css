@@ -1,0 +1,180 @@
+.main-content {
+    flex: 1;
+    background-color: var(--bg-body);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.header {
+    padding: 24px 32px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* background: #f3f4f6; Optional pill bg */
+    padding: 4px;
+    border-radius: 99px;
+    cursor: pointer;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-accent);
+    border-radius: 50%;
+    /* In image it's a blue circle */
+}
+
+.content-center {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 120px;
+    /* Optical center */
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.greeting {
+    font-size: 64px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: var(--color-text-primary);
+    letter-spacing: -2px;
+    text-align: center;
+    line-height: 1.1;
+}
+
+.greeting span {
+    color: var(--color-accent);
+}
+
+.subtext {
+    font-size: 18px;
+    color: var(--color-text-secondary);
+    margin-bottom: 64px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.prompt-container {
+    width: 100%;
+    padding: 0 24px;
+}
+
+.prompt-box {
+    width: 100%;
+    background-color: #f3f4f6;
+    /* Light gray */
+    border-radius: 24px;
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.02);
+    transition: box-shadow 0.2s;
+}
+
+.prompt-box:focus-within {
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.02), 0 0 0 2px rgba(0, 102, 255, 0.1);
+}
+
+.prompt-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.prompt-textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    resize: none;
+    font-family: var(--font-primary);
+    font-size: 16px;
+    outline: none;
+    min-height: 24px;
+    color: var(--color-text-primary);
+    line-height: 1.5;
+    padding-top: 8px;
+    /* Align with button */
+}
+
+.prompt-textarea::placeholder {
+    color: #9ca3af;
+    font-weight: 400;
+}
+
+.style-select-btn {
+    background: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 12px;
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    white-space: nowrap;
+    font-weight: 500;
+}
+
+.prompt-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.add-btn {
+    background-color: #e5e7eb;
+    color: #6b7280;
+}
+
+.add-btn:hover {
+    background-color: #d1d5db;
+    color: #4b5563;
+}
+
+.send-btn {
+    background-color: #9ca3af;
+    /* Disabled state look */
+    color: white;
+}
+
+.send-btn.active {
+    background-color: var(--color-accent);
+}
+
+.footer-info {
+    text-align: center;
+    padding: 24px;
+    font-size: 13px;
+    color: #9ca3af;
+    margin-top: auto;
+}

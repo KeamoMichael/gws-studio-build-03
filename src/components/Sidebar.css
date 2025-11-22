@@ -1,0 +1,103 @@
+.sidebar {
+    width: var(--sidebar-width);
+    background-color: var(--bg-sidebar);
+    height: 100%;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    border-right: 1px solid transparent;
+    /* Optional border */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 24px;
+    font-weight: 700;
+    /* Bold */
+    color: var(--color-text-primary);
+    letter-spacing: -0.5px;
+}
+
+.logo-icon-container {
+    width: 32px;
+    height: 32px;
+    background-color: var(--color-accent);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.new-ui-btn {
+    background: linear-gradient(135deg, #0066ff 0%, #00bfff 100%);
+    color: white;
+    border: none;
+    border-radius: 99px;
+    padding: 14px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-shadow: 0 4px 12px rgba(0, 102, 255, 0.25);
+    transition: all 0.2s ease;
+}
+
+.new-ui-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(0, 102, 255, 0.35);
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    color: var(--color-text-secondary);
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.nav-item.active {
+    color: var(--color-accent);
+    background-color: rgba(0, 102, 255, 0.08);
+}
+
+.nav-item:hover:not(.active) {
+    background-color: rgba(0, 0, 0, 0.03);
+    color: var(--color-text-primary);
+}
+
+/* Sidebar collapse arrow (visual only based on image) */
+.sidebar-toggle {
+    position: absolute;
+    left: var(--sidebar-width);
+    top: 32px;
+    transform: translateX(-50%);
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    z-index: 10;
+}
