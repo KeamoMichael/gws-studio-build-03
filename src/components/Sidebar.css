@@ -76,6 +76,20 @@
 .nav-item.active {
     color: var(--color-accent);
     background-color: rgba(0, 102, 255, 0.08);
+    position: relative;
+}
+
+.nav-item.active::before {
+    content: '';
+    position: absolute;
+    left: -24px;
+    /* Move to the edge of the sidebar padding */
+    top: 50%;
+    transform: translateY(-50%);
+    height: 24px;
+    width: 4px;
+    background-color: var(--color-accent);
+    border-radius: 0 4px 4px 0;
 }
 
 .nav-item:hover:not(.active) {
@@ -87,7 +101,8 @@
 .sidebar-toggle {
     position: absolute;
     left: var(--sidebar-width);
-    top: 32px;
+    top: 40px;
+    /* Align with logo roughly */
     transform: translateX(-50%);
     background: white;
     border: 1px solid var(--border-color);

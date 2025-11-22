@@ -4,8 +4,15 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    height: 100vh;
+    height: calc(100vh - 24px);
+    /* Top and bottom margin */
+    margin: 12px 12px 12px 0;
+    /* Right margin for symmetry if needed, or just 0 */
+    border-radius: 30px;
+    /* Rounded corners for the card look */
     overflow-y: auto;
+    box-shadow: -4px 0 24px rgba(0, 0, 0, 0.02);
+    /* Subtle shadow */
 }
 
 .header {
