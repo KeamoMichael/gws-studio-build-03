@@ -1,10 +1,12 @@
 :root {
   --font-primary: 'Manrope', sans-serif;
   --bg-body: #ffffff;
-  --bg-sidebar: #f5f7fa; /* Light gray/blueish tint */
+  --bg-sidebar: #f5f7fa;
+  /* Light gray/blueish tint */
   --color-text-primary: #1a1a1a;
   --color-text-secondary: #6b7280;
-  --color-accent: #0066ff; /* Bright blue */
+  --color-accent: #0066ff;
+  /* Bright blue */
   --color-accent-hover: #0052cc;
   --border-color: #e5e7eb;
   --sidebar-width: 260px;
@@ -16,36 +18,42 @@
   font-weight: 200;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Manrope';
   src: url('/fonts/Manrope-Light.otf') format('opentype');
   font-weight: 300;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Manrope';
   src: url('/fonts/Manrope-Regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Manrope';
   src: url('/fonts/Manrope-Medium.otf') format('opentype');
   font-weight: 500;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Manrope';
   src: url('/fonts/Manrope-SemiBold.otf') format('opentype');
   font-weight: 600;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Manrope';
   src: url('/fonts/Manrope-Bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Manrope';
   src: url('/fonts/Manrope-ExtraBold.otf') format('opentype');
@@ -74,11 +82,37 @@ body {
   display: flex;
 }
 
+.app-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
 /* Utility classes */
-.flex { display: flex; }
-.flex-col { flex-direction: column; }
-.items-center { align-items: center; }
-.justify-center { justify-content: center; }
-.justify-between { justify-content: space-between; }
-.w-full { width: 100%; }
-.h-full { height: 100%; }
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
